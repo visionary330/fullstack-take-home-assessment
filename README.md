@@ -37,8 +37,8 @@ A full-stack, type-safe Next.js 15.4.1 application built using the modern **T3 s
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/social-department.git
-cd social-department
+git clone https://github.com/visionary330/fullstack-take-home-assessment.git
+cd fullstack-take-home-assessment
 ```
 
 ### 2. Install Dependencies
@@ -80,7 +80,7 @@ Visit http://localhost:3000 to view the app.
 
 ### Build the Docker Image
 ```bash
-docker build -t social-department \
+docker build -t fullstack-take-home-assessment \
   --build-arg DATABASE_URL=your-database-url \
   --build-arg NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_... \
   --build-arg CLERK_SECRET_KEY=sk_test_... \
@@ -90,14 +90,13 @@ docker build -t social-department \
 ### Run the Container
 
 ```bash
-docker run -p 3000:3000 social-department
+docker run -p 3000:3000 fullstack-take-home-assessment
 ```
 
 ## 📂 Project Structure
 
 ```bash
 ├── prisma/                        # Prisma DB schema and migrations
-│   ├── migrations/
 │   └── schema.prisma
 ├── public/                        # Public assets
 ├── src/
@@ -117,22 +116,6 @@ docker run -p 3000:3000 social-department
 │   ├── server/                   # Server-side actions (e.g., database, actions)
 │   ├── styles/                   # Tailwind/global CSS (if present)
 │   └── types/                    # Type definitions
-│
-├── .dockerignore
-├── .env
-├── .env.example
-├── .gitignore
-├── components.json              # shadcn/ui config
-├── Dockerfile
-├── eslint.config.js
-├── next-env.d.ts
-├── next.config.js
-├── package.json
-├── package-lock.json
-├── postcss.config.js
-├── prettier.config.js
-├── README.md
-└── start-database.sh            # Shell script to initialize/start DB
 
 ```
 
